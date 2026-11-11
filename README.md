@@ -39,6 +39,10 @@ All content lives in plain lists in `js/data/`:
 
 Edit, save, refresh.
 
+## More games
+
+Five more game ideas are parked in [IDEAS.md](IDEAS.md).
+
 ## Layout
 
 ```
