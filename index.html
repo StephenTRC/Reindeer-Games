@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Reindeer Games · Three Rivers Church Students</title>
+  <meta name="description" content="Christmas party games for Three Rivers Church Students.">
+  <meta name="theme-color" content="#082a35">
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-view="home">
+  <canvas id="snow" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="Three Rivers Church Students — back to all games">
+      <img class="brand-mark" src="assets/logo/trc-cross-white.png" alt="" width="560" height="800">
+      <span class="brand-text">
+        <span class="brand-name">Three Rivers Church</span>
+        <span class="brand-sub">Students</span>
+      </span>
+    </a>
+    <div class="topbar-actions">
+      <button class="iconbtn" id="btn-teams" type="button"><span aria-hidden="true">🏆</span><span class="iconbtn-label">Teams &amp; scores</span></button>
+      <button class="iconbtn iconbtn--square" id="btn-sound" type="button" aria-pressed="true" title="Sound on/off"><span aria-hidden="true">🔔</span><span class="sr-only">Toggle sound</span></button>
+      <button class="iconbtn iconbtn--square" id="btn-full" type="button" title="Full screen"><span aria-hidden="true">⛶</span><span class="sr-only">Toggle full screen</span></button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="toasts" aria-live="polite"></div>
+
+  <dialog id="teams-dialog" aria-labelledby="teams-title">
+    <form method="dialog" class="dialog-body">
+      <h2 id="teams-title">Teams &amp; scores</h2>
+      <p class="dialog-hint">Rename the teams, change how many are playing, or fix a score by hand.</p>
+      <div class="teamcount" role="group" aria-label="Number of teams">
+        <span>Teams:</span>
+        <button type="button" data-count="2">2</button>
+        <button type="button" data-count="3">3</button>
+        <button type="button" data-count="4">4</button>
+      </div>
+      <div id="teams-list"></div>
+      <div class="dialog-actions">
+        <button type="button" class="btn btn--ghost" id="btn-reset-scores">Reset scores to 0</button>
+        <button type="submit" class="btn">Done</button>
+      </div>
+    </form>
+  </dialog>
+
+  <noscript>Reindeer Games needs JavaScript turned on.</noscript>
+
+  <script src="js/core.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/data/emoji.js"></script>
+  <script src="js/data/trivia.js"></script>
+  <script src="js/data/scripture.js"></script>
+  <script src="js/games/dash.js"></script>
+  <script src="js/games/drop.js"></script>
+  <script src="js/games/emoji.js"></script>
+  <script src="js/games/scripture.js"></script>
+  <script src="js/games/trivia.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
